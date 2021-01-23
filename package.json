@@ -1,12 +1,9 @@
 {
-  "name": "nodebb-plugin-sso-vk",
+  "name": "@ariastel/nodebb-plugin-sso-vk",
   "version": "2.0.7",
   "description": "NodeBB Vkontakte SSO",
   "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/atomoc/nodebb-plugin-sso-vk"
-  },
+  "repository": "git://github.com/ariastel/nodebb-plugin-sso-vk.git",
   "keywords": [
     "nodebb",
     "plugin",
@@ -16,9 +13,12 @@
     "registration"
   ],
   "author": "Sergej Saveljev <sergej@eyrini.ru>",
+  "contributors": [
+    "Ariastel Team <ariastel@iamantosik.me> (https://github.com/ariastel)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atomoc/nodebb-plugin-sso-vk/issues"
+    "url": "https://github.com/ariastel/nodebb-plugin-sso-vk/issues"
   },
   "readme": "",
   "readmeFilename": "README.md",
@@ -28,11 +28,11 @@
   "nbbpm": {
     "compatibility": "^1.16.x"
   },
-  "homepage": "https://github.com/atomoc/nodebb-plugin-sso-vk",
-  "maintainers": [
-    "atomoc <atomoc@gmail.com>"
-  ],
+  "homepage": "https://github.com/ariastel/nodebb-plugin-sso-vk",
   "devDependencies": {
     "eslint": "^7.17.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

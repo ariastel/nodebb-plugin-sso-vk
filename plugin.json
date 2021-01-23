@@ -2,7 +2,7 @@
 	"id": "nodebb-plugin-sso-vk",
 	"name": "NodeBB Vkontakte SSO",
 	"description": "NodeBB Plugin that allows users to login/register via their VKontakte account.",
-	"url": "https://github.com/atomoc/nodebb-plugin-sso-vk",
+	"url": "https://github.com/ariastel/nodebb-plugin-sso-vk",
 	"library": "./library.js",
 	"templates": "templates",
 	"hooks": [
@@ -14,5 +14,6 @@
 	],
 	"acpScripts": [
 		"static/lib/admin.js"
-	]
+	],
+	"settingsRoute": "/admin/plugins/sso-vkontakte"
 }
