@@ -8,6 +8,15 @@
 						Register a new <strong>Vkontakte Application</strong> via 
 						<a href="https://vk.com/dev">Application Development</a>
 					</p>
+					<hr/>
+					<p>You can configure this plugin via an <em>environment variables</em>. You can also specify values in the form below, and those will be
+						stored in the database.</p>
+					<p>
+						<pre><code>export SSO_VK_CLIENT_ID="xxxxx"
+export SSO_VK_CLIENT_SECRET="yyyyy"
+export SSO_VK_AUTOCONFIRM="true"</code></pre>
+					</p>
+					<hr />
 					<div class="form-group">
 						<label for="Client ID">Client ID</label>
 						<input type="text" id="id" name="id" title="Client ID" class="form-control" placeholder="Client ID"><br />
@@ -20,8 +29,8 @@
 						The appropriate "callback URL" is your NodeBB's URL with `/auth/vkontakte/callback` appended to it.
 					</p>
 					<div class="checkbox">
-						<label for="showSiteTitle" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
-							<input type="checkbox" class="mdl-switch__input" id="showSiteTitle" name="autoconfirm" />
+						<label for="autoconfirm" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+							<input type="checkbox" class="mdl-switch__input" id="autoconfirm" name="autoconfirm" />
 							<span class="mdl-switch__label">Skip email verification for people who register using SSO?</span>
 						</label>
 					</div>
