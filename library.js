@@ -40,7 +40,7 @@ Vkontakte.init = function (data, callback) {
 
 	hostHelpers.setupPageRoute(data.router, '/deauth/vkontakte', data.middleware, [data.middleware.requireUser], function (_, res) {
 		res.render('plugins/sso-vkontakte/deauth', {
-			service: 'Vkontakte',
+			service: '[[sso-vk:vk]]',
 		});
 	});
 	data.router.post('/deauth/vkontakte', [data.middleware.requireUser, data.middleware.applyCSRF], function (req, res, next) {
@@ -78,14 +78,14 @@ Vkontakte.getAssociation = function (data, callback) {
 				associated: true,
 				url: `https://vk.com/id${vkontakteid}`,
 				deauthUrl: `${nconf.get('url')}/deauth/vkontakte`,
-				name: constants.name,
+				name: '[[sso-vk:vk]]',
 				icon: constants.admin.icon
 			});
 		} else {
 			data.associations.push({
 				associated: false,
 				url: `${nconf.get('url')}/auth/vkontakte`,
-				name: constants.name,
+				name: '[[sso-vk:vk]]',
 				icon: constants.admin.icon
 			});
 		}
@@ -210,7 +210,7 @@ Vkontakte.addMenuItem = async function (custom_header) {
 	custom_header.authentication.push({
 		'route': constants.admin.route,
 		'icon': constants.admin.icon,
-		'name': constants.name
+		'name': '[[sso-vk:vk]]'
 	});
 	return custom_header;
 };
