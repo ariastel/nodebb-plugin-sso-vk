@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/ariastel/nodebb-plugin-sso-vk",
   "devDependencies": {
-    "eslint": "^7.17.0"
+    "eslint": "^7.23.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
