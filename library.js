@@ -17,7 +17,14 @@ const constants = Object.freeze({
 	'admin': {
 		'icon': 'fa-vk',
 		'route': '/plugins/sso-vkontakte'
-	}
+	},
+
+	displayName: 'VK',
+  button: {
+    borderColor: '#4680C2',
+    backgroundColor: '#4680C2',
+    textColor: '#FFF',
+  },
 });
 
 const Vkontakte = {
@@ -134,7 +141,10 @@ Vkontakte.getStrategy = function (strategies, callback) {
 			url: '/auth/vkontakte',
 			callbackURL: '/auth/vkontakte/callback',
 			icon: 'vk fa-vk',
-			scope: 'email'
+			scope: 'email',
+
+      displayName: constants.displayName,
+      ...constants.button
 		});
 	}
 

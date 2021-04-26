@@ -14,6 +14,12 @@
 	"acpScripts": [
 		"static/lib/admin.js"
 	],
+	"scripts": [
+		"static/lib/login.js"
+	],
+  "staticDirs": {
+    "images": "static/images"
+  },
 	"templates": "templates",
 	"languages": "languages",
 	"settingsRoute": "/admin/plugins/sso-vkontakte"
